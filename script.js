@@ -6,6 +6,7 @@ const inputEl = document.querySelector(".form-input");
 const alertEl = document.querySelector(".alert-text");
 const btnAddEl = document.querySelector(".btn--add");
 const btnClearEl = document.querySelector(".btn--clear-all");
+const spanEl = document.querySelector("span");
 
 const storage = localStorage;
 let uniqueId = 0;
@@ -14,6 +15,7 @@ let uniqueId = 0;
 // Event listener
 btnAddEl.addEventListener("click", addTask);
 btnClearEl.addEventListener("click", clearAll);
+listsEl.addEventListener("click", toggleListChecked);
 
 // Functions
 
@@ -71,4 +73,13 @@ function clearAll() {
   uniqueId = 0;
 
   window.location.reload();
+}
+
+function toggleListChecked(e) {
+  const selectedTask = e.target;
+  if (selectedTask.classList.contains("icon")) {
+    const parent = selectedTask.parentElement;
+    selectedTask.classList.toggle("list-icon-check");
+    parent.querySelector("span").classList.toggle("list-text");
+  }
 }

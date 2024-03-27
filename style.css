@@ -128,6 +128,17 @@ body {
 .icon {
   font-size: 1.6rem;
   position: absolute;
-  top: -0.4rem;
+  top: 0rem;
   right: 1rem;
+  cursor: pointer;
+}
+
+/* handling list checked */
+.list-text {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+
+.list-icon-check {
+  color: #c92a2a;
 }
