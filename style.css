@@ -116,13 +116,13 @@ body {
   padding-left: 1.4rem;
   font-size: 1.2rem;
   line-height: 1.5;
+  min-width: 0;
 }
 
 .list {
   position: relative;
   padding-right: 3.6rem;
   margin-bottom: 1rem;
-  /* text-decoration: line-through; */
 }
 
 .icon {
