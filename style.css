@@ -60,7 +60,7 @@ body {
   grid-template-columns: 2fr 1fr;
   column-gap: 2rem;
   row-gap: 0.5rem;
-  padding-bottom: 2.4rem;
+  padding-bottom: 1.2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -82,6 +82,14 @@ body {
   box-shadow: 0 1.2rem 4.6rem rgba(0, 0, 0, 0.1);
 }
 
+.alert-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff0000;
+  grid-column: 1 / -1;
+  opacity: 0;
+}
+
 .btn {
   width: 100%;
   height: 100%;
@@ -95,7 +103,7 @@ body {
   transition: all 0.2s;
 }
 
-.btn--clearAll {
+.btn--clear-all {
   height: 80%;
 }
 
@@ -114,6 +122,7 @@ body {
   position: relative;
   padding-right: 3.6rem;
   margin-bottom: 1rem;
+  /* text-decoration: line-through; */
 }
 
 .icon {

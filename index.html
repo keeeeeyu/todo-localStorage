@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -21,13 +21,14 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
     <title>To-do List</title>
   </head>
   <body>
     <section class="container">
       <div class="sub-container">
         <h1 class="heading">To-do List</h1>
-        <form class="todo-form" action="#">
+        <form class="todo-form" action="">
           <label for="task">Add task :</label>
           <input
             id="task"
@@ -36,26 +37,18 @@
             placeholder="Add task here..."
             required
           />
-          <button class="btn btn--add">Add</button>
+          <button class="btn btn--add" type="submit">Add</button>
+          <span class="alert-text"
+            >You must enter something in the input field.</span
+          >
         </form>
         <ul class="lists">
           <li class="list">
-            walk woody
-            <ion-icon class="icon" name="checkmark-outline"></ion-icon>
-          </li>
-          <li class="list">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
-            dolores illo labore. Voluptatem inventore recusandae autem ipsam.
-            Praesentium molestias culpa voluptate pariatur quidem cumque fugit
-            nihil fuga. Obcaecati natus quis possimus eius dolor hic placeat
-            necessitatibus modi qui ex consequatur sint maiores laboriosam
-            quidem, quo iste animi exercitationem quas molestias, commodi
-            provident! Vel repudiandae quibusdam cum veritatis provident dicta,
-
+            <span>walk woody</span>
             <ion-icon class="icon" name="checkmark-outline"></ion-icon>
           </li>
         </ul>
-        <button class="btn btn--clearAll">Clear All Tasks</button>
+        <button class="btn btn--clear-all">Clear All Tasks</button>
       </div>
     </section>
   </body>
