@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>To-do List</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="sub-container">
+        <h1 class="heading">To-do List</h1>
+        <form class="todo-form" action="#">
+          <label for="task">Add task :</label>
+          <input
+            id="task"
+            class="form-input"
+            type="text"
+            placeholder="Add task here..."
+            required
+          />
+          <button class="btn btn--add">Add</button>
+        </form>
+        <ul class="lists">
+          <li class="list">
+            walk woody
+            <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+          </li>
+          <li class="list">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+            dolores illo labore. Voluptatem inventore recusandae autem ipsam.
+            Praesentium molestias culpa voluptate pariatur quidem cumque fugit
+            nihil fuga. Obcaecati natus quis possimus eius dolor hic placeat
+            necessitatibus modi qui ex consequatur sint maiores laboriosam
+            quidem, quo iste animi exercitationem quas molestias, commodi
+            provident! Vel repudiandae quibusdam cum veritatis provident dicta,
+
+            <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+          </li>
+        </ul>
+        <button class="btn btn--clearAll">Clear All Tasks</button>
+      </div>
+    </section>
+  </body>
+</html>
